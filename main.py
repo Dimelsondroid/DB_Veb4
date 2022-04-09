@@ -2,7 +2,7 @@ import sqlalchemy
 from pprint import pprint
 
 class DataBase:
-    db = 'postgresql://gdk_3:123@localhost:5432/gdk_3'
+    db = 'postgresql:// '
     engine = sqlalchemy.create_engine(db)
     connection = engine.connect()
 
